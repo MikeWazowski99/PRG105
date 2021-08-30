@@ -17,7 +17,7 @@ print ('Computer Science')
 print("=" * 10, "Section 2.3 using quotes", "=" * 10)
 # Write a statement that displays:
 # The dog says "woof!"
-print ('the dog says "woof"')
+
 
 # TODO 2.4 working with variables and printing their values
 print("=" * 10, "Section 2.4 printing variable values", "=" * 10)
@@ -26,10 +26,8 @@ print("=" * 10, "Section 2.4 printing variable values", "=" * 10)
 # 3) Print the word age with a space and the variable value, example: age 25
 # 4) Assign 42 to the age variable
 # 5) Print the word age with a space and the variable value: age 42
-age = 42
-print (age)
-print ('age 17')
-print ('age 42')
+
+
 # TODO 2.6 keyboard input
 print("=" * 10, "Section 2.6 keyboard input", "=" * 10)
 # 1) Get the user to enter their name using an input statement and assign it to a variable called name
