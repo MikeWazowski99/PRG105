@@ -6,6 +6,7 @@
     Submit your completed file
 """
 import random
+import math
 
 # TODO 5.2 - calling an existing function
 print("=" * 10, "Section 5.2 call an existing function", "=" * 10)
@@ -145,45 +146,50 @@ print("=" * 10, "Section 5.7 value returning functions", "=" * 10)
 
 pi = 3.14
 
+
 def main5():
     r = random.randrange(1, 10)  # TODO generate a random integer between 1-10, assign it to the variable r
     r2 = r * r
     area(r2)
-    
-    
+
+
 def area(radius_squared):
     my_area = (pi * radius_squared)  # TODO insert the PI constant multiplied by the parameter here
     print(format(my_area, ",.2f"))
 
-    
-main5()
 
+main5()
 
 # TODO 5.8 value returning functions
 print("=" * 10, "Section 5.8 value returning functions", "=" * 10)
+
+
 # Complete the following program, remove the """  """ before testing
-"""
+
 def main6():
     print("This program will calculate your BMI")
-    height = float(input("What is your height in inches?  "))
-    weight = float(input("What is your weight in pounds"))
+    height = float(input("What is your height in inches? "))
+    weight = float(input("What is your weight in pounds "))
     # TODO call the bmi function and assign the result to a variable named answer
-    
+    bmi(patient_bmi)
     # TODO print the variable answer, make sure to format it to 1 decimal place
-    
+    pbmi = patient_bmi
+    print(pbmi)
     # TODO modify the bmi function to accept the height and weight
     # read the code to determine the parameter names
 
 
-def bmi():
-    # BMI = (Weight in Pounds / (Height in inches x Height in inches)) x 703
-    patient_bmi =  (weight_pounds / (height_inches * height_inches)) * 703
+def bmi(weight, height):
+    weight = weight_pounds
+    height = height_inches
+    BMI = (Weight in Pounds / (Height in inches x Height in inches)) x 703
+    print(BMI)
+    patient_bmi = (weight_pounds / (height_inches * height_inches)) * 703
     # TODO send the patient_bmi value back to main6
-    
+    return patient_bmi
 
 main6()
 
-"""
 # TODO 5.9 the math module
 print("=" * 10, "Section 5.9 use the math module", "=" * 10)
 # import math - Add the import math statement at the top of this file
