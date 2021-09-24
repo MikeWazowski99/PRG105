@@ -144,7 +144,7 @@ print("=" * 10, "Section 5.7 value returning functions", "=" * 10)
 # import random - Add a statement importing the random library at the top of this file
 # Add a global constant PI with a value of 3.14 before the main5 function definition
 
-pi = 3.14
+PI = 3.14
 
 
 def main5():
@@ -154,7 +154,7 @@ def main5():
 
 
 def area(radius_squared):
-    my_area = (pi * radius_squared)  # TODO insert the PI constant multiplied by the parameter here
+    my_area = (PI * radius_squared)  # TODO insert the PI constant multiplied by the parameter here
     print(format(my_area, ",.2f"))
 
 
@@ -171,22 +171,22 @@ def main6():
     height = float(input("What is your height in inches? "))
     weight = float(input("What is your weight in pounds "))
     # TODO call the bmi function and assign the result to a variable named answer
-    bmi(patient_bmi)
+    bmi(weight,height)
     # TODO print the variable answer, make sure to format it to 1 decimal place
-    pbmi = patient_bmi
-    print(pbmi)
+    answer = bmi(weight, height)
+    print(answer, "inches ")
     # TODO modify the bmi function to accept the height and weight
     # read the code to determine the parameter names
 
 
 def bmi(weight, height):
-    weight = weight_pounds
-    height = height_inches
-    BMI = (Weight in Pounds / (Height in inches x Height in inches)) x 703
-    print(BMI)
-    patient_bmi = (weight_pounds / (height_inches * height_inches)) * 703
+    BMI = format((weight / (height * height)) * 703, ",.2f")
+    print(BMI, "inches ")
+    patient_bmi = format((weight / (height * height)) * 703, ",.2f")
     # TODO send the patient_bmi value back to main6
     return patient_bmi
+    return BMI
+
 
 main6()
 
@@ -196,3 +196,11 @@ print("=" * 10, "Section 5.9 use the math module", "=" * 10)
 # Write a statement that uses the ceil function on the following variable
 # Display the result
 number_to_round = 4.243
+
+
+def main7():
+    c = math.ceil(number_to_round)
+    print(c)
+
+
+main7()
