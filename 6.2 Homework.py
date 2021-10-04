@@ -20,12 +20,10 @@ def main():
         print(format(total, ',.2f'))
         line = sales_info.readline()
         average = total/count
-        print('\n' + 'The total average is ')
-        print(format(average, ',.2f'))
+        print('\n' + 'The total average is: ' + format(average, '22,.2f'))
     sales_info.close()
-    print("The total amount of sales is ")
-    print(format(total, ',.2f'))
-    print('The total count is #', count)
+    print("The total amount of sales is: " + format(total, '15,.2f'))
+    print('The total number of entries is:', format(count, '8,.2f'))
 
 
 main()
