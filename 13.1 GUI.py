@@ -30,8 +30,8 @@ class MyGUI:
         self.show_info_button = tkinter.Button(self.button_frame, text='Show Info', command=self.show)
         self.quit_button = tkinter.Button(self.button_frame, text='Quit', command=self.main_window.destroy)
         # pack buttons
-        self.show_info_button.pack()
-        self.quit_button.pack()
+        self.show_info_button.pack(side='left')
+        self.quit_button.pack(side='right')
         # frame pack
         self.info_frame.pack()
         self.button_frame.pack()
